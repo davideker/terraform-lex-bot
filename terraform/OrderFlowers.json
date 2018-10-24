@@ -1,0 +1,50 @@
+
+    {
+    "name": "OrderFlowers", 
+    "sampleUtterances": [
+        "I would like to order some flowers" 
+    ], 
+    "slots": [ 
+        {
+            "slotType": "FlowerTypes", 
+            "name": "FlowerType", 
+            "slotConstraint": "Required", 
+            "valueElicitationPrompt": {
+                "maxAttempts": 2, 
+                "messages": [
+                    {
+                        "content": "What type of flowers would you like?", 
+                        "contentType": "PlainText"
+                    }
+                ]
+            }, 
+            "priority": 1, 
+            "slotTypeVersion": "$LATEST", 
+            "sampleUtterances": [
+                "I would like {FlowerType}"
+            ], 
+            "description": "The type of flowers"
+        }
+    ], 
+    "confirmationPrompt": {
+        "maxAttempts": 2, 
+        "messages": [
+            {
+                "content": "Okay, would you like me to order you {FlowerType} now?", 
+                "contentType": "PlainText"
+            }
+        ]
+    }, 
+    "rejectionStatement": {
+        "messages": [
+            {
+                "content": "Okay, I will cancel your request.", 
+                "contentType": "PlainText"
+            }
+        ]
+    }, 
+    "fulfillmentActivity": {
+        "type": "ReturnIntent"
+    }, 
+    "description": "Intent to order a bouquet of flowers for pick up"
+}

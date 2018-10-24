@@ -1,0 +1,5 @@
+https://docs.aws.amazon.com/lex/latest/dg/gs-cli-create.html
+https://docs.aws.amazon.com/lex/latest/dg/API_Reference.html
+https://chatbotsmagazine.com/advanced-lex-bot-multi-turn-dialogs-sessions-fbde1c3909d8
+https://aws.amazon.com/blogs/machine-learning/greetings-visitor-engage-your-web-users-with-amazon-lex/
+https://docs.aws.amazon.com/cli/latest/reference/lex-models/index.html#cli-aws-lex-models
